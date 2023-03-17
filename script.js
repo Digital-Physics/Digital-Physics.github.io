@@ -70,7 +70,7 @@
   
     async function spin() {
         init(false, 1, 2);
-        const audio = new Audio('ca_attempt.ogg');
+        const audio = new Audio('ca_attempt.wav');
         audio.loop = true;
         audio.play();
 
