@@ -74,6 +74,10 @@
         audio.loop = true;
         audio.play();
 
+        audio.addEventListener('ended', function() {
+          audio.pause();
+        });
+
         score += 1000;
         bgDiv.innerText = (score).toLocaleString("en-US");
         fgDiv.innerText = (score).toLocaleString("en-US");
@@ -91,7 +95,6 @@
         audio.pause();
       }
       
-
     function shuffle([...arr]) {
       let m = arr.length;
       while (m) {
