@@ -104,8 +104,8 @@
 
         // check for payout
         let allSame = line_characters.every((element) => element === line_characters[0]);
-        let twoMatch = line_characters.filter((element) => element === line_characters[0]).length === 2 || 
-        line_characters.filter((element) => element === line_characters[1]).length === 2;
+        let twoMatch = line_characters.filter((element) => element === line_characters[0] && element === line_characters[2]).length === 2;
+        // line_characters.filter((element) => element === line_characters[1]).length === 2;
         if (allSame) {
           console.log("all match!!!!")
           // payout
