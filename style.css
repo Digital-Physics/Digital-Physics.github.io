@@ -142,7 +142,7 @@ ul {
 
 #first_score:before{
   content: "💾";
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 #second:before{
@@ -164,7 +164,7 @@ ul {
 
 #second_score:before{
   content: "🕹️";
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 #third:before{
@@ -186,7 +186,7 @@ ul {
 
 #third_score:before{
   content: "🤖";
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 @font-face {
