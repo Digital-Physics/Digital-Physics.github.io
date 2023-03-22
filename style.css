@@ -111,9 +111,17 @@ button {
   text-align: center;
 }
 
-ol {
+ul {
   list-style: none;
   padding: 300;
+}
+
+.two-column-list {
+  columns: 2;
+}
+
+.two-column-list li {
+  break-inside: avoid;
 }
 
 #first:before{
@@ -125,6 +133,12 @@ ol {
   font-family: "MyFont", sans-serif;
   color: #076309fc;
 }
+
+#first_score{
+  font-family: "MyFont", sans-serif;
+  color: #076309fc;
+}
+
 
 #second:before{
   content: "🕹️";
@@ -138,6 +152,11 @@ ol {
   color: #076309ea;
 }
 
+#second_score{
+  font-family: "MyFont", sans-serif;
+  color: #076309ea;
+}
+
 #third:before{
   content: "🤖";
   margin-right: 5px;
@@ -146,6 +165,11 @@ ol {
 }
 
 #third{
+  font-family: "MyFont", sans-serif;
+  color: #076309bc;
+}
+
+#third_score{
   font-family: "MyFont", sans-serif;
   color: #076309bc;
 }
