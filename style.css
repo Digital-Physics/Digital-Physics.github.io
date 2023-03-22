@@ -118,6 +118,7 @@ ul {
 
 .two-column-list {
   columns: 2;
+  height: 100px;
 }
 
 .two-column-list li {
@@ -126,7 +127,7 @@ ul {
 
 #first:before{
   content: "💾";
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 #first{
@@ -139,10 +140,14 @@ ul {
   color: #076309fc;
 }
 
+#first_score:before{
+  content: "💾";
+  margin-right: 3px;
+}
 
 #second:before{
   content: "🕹️";
-  margin-right: 5px;
+  margin-right: 3px;
   font-family: "MyFont", sans-serif;
   color: #4CAF50;
 }
@@ -157,9 +162,14 @@ ul {
   color: #076309ea;
 }
 
+#second_score:before{
+  content: "🕹️";
+  margin-right: 3px;
+}
+
 #third:before{
   content: "🤖";
-  margin-right: 5px;
+  margin-right: 3px;
   font-family: "MyFont", sans-serif;
   color: #4CAF50;
 }
@@ -172,6 +182,11 @@ ul {
 #third_score{
   font-family: "MyFont", sans-serif;
   color: #076309bc;
+}
+
+#third_score:before{
+  content: "🤖";
+  margin-right: 3px;
 }
 
 @font-face {
