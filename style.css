@@ -8,28 +8,19 @@ body {
 }
 
 #app {
-  width: 350px;
-  height: 500px;
+  width: 550px;
+  height: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: auto;
   background: #04a9223a;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 25px;
 }
-
-/* #app {
-  width: 50%;
-  height: 100%;
-  background: #04a9223a;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 
 :root {
   --gold: #ffb338;
@@ -50,8 +41,8 @@ body {
   -webkit-background-clip: text;
   color: #363833;
   font-family: 'Poppins', sans-serif;
-  font-weight: 900;
-  font-size: clamp( 3em, 18vw, 15rem);
+  font-weight: 300;
+  font-size: clamp( 3em, 18vw, 10rem);
   grid-area: overlap;
   letter-spacing: 1px;
   -webkit-text-stroke: 4px transparent;
@@ -118,4 +109,61 @@ button {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+ol {
+  list-style: none;
+  padding: 300;
+}
+
+#first:before{
+  content: "💾";
+  margin-right: 5px;
+}
+
+#first{
+  font-family: "MyFont", sans-serif;
+  color: #076309fc;
+}
+
+#second:before{
+  content: "🕹️";
+  margin-right: 5px;
+  font-family: "MyFont", sans-serif;
+  color: #4CAF50;
+}
+
+#second{
+  font-family: "MyFont", sans-serif;
+  color: #076309ea;
+}
+
+#third:before{
+  content: "🤖";
+  margin-right: 5px;
+  font-family: "MyFont", sans-serif;
+  color: #4CAF50;
+}
+
+#third{
+  font-family: "MyFont", sans-serif;
+  color: #076309bc;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("./kongtext.ttf");
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "MyFont", sans-serif;
+  color: #4CAF50;
+  text-shadow: 2px 2px #021e028b;
+}
+
+#leaderboard {
+  border: 2px solid #4CAF50;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #4CAF50;
 }
