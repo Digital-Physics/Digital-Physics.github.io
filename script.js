@@ -232,6 +232,7 @@
           headers: {
               'Content-type': 'application/json'
           },
+          mode: 'cors', // suggested by ChatGPT
           body: JSON.stringify({
               name: updateNameInput.value,
               score: binary,
