@@ -1,1 +1,0 @@
-This is a javascript, html, and css project. The theme of the web page is going to be a digital physics slot machine which may evolve into an arcade.

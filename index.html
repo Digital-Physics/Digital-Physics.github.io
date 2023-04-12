@@ -7,27 +7,36 @@
         <title>Digital Physics Arcade</title>
         <link rel="stylesheet" href="./style.css"
     </head>
-    <body style="background-image: url('./background.png')">
+    <body style="background-image: url('./images/background.png')">
         <div id="app">
             <div>
                 <a href="https://digital-physics.itch.io/digital-physics" style="display: block; text-align: center;">
-                    <img src="./digital_physics_text_smaller.png" height="70%" width="70%">
+                    <img src="./images/digital_physics_text_smaller.png" height="50%" width="50%">
                 </a>
             </div>
-            <div id="leaderboard">
-                <h2>*#*#x Leaderboard x#*#*</h2>
-                <ul class="two-column-list">
-                  <li id="first">Khatchig</li>
-                  <li id="second">Alice</li>
-                  <li id="third">Bob</li>
-                  <li id="first_score">1,000,000</li>
-                  <li id="second_score">1,000</li>
-                  <li id="third_score">100</li>
-                </ul>
+            <div class="container">
+                <h1 class="title">
+                    <span class="metal clip raise">ARCADE</span><br>
+                    <!-- <span class="metal clip raise">effect</span> -->
+                </h1>
+                <h2 class="subtitle">101010</h2>
             </div>
+            <div id="leaderboard">
+                <h2 id="leaderboard-date"></h2>
+                <h2>#*#*#x Leaderboard x#*#*#</h2>
+                <ul class="two-column-list"></ul>
+            </div>
+            <section hidden id="update-row">
+                <div class="input-container">
+                  <input id="name-input" type="text" placeholder="Enter Name" maxlength="10">
+                  <a>
+                    <img id="update-row-btn" src="./images/delta.png">
+                  </a>
+                </div>
+              </section>
             <div class="wrapper">
-                <div class="bg">101,010</div>
-                <div class="fg">101,010</div>
+                <div class="bg">101010</div>
+                <div class="fg">101010</div>
             </div>
             <div class="doors">
                 <div class="door">
@@ -52,9 +61,14 @@
                 <button id="spinner">∞</button>
                 <!-- <button id="reseter">Reset</button> -->
             </div>
+            <div id="cash-out">
+                <a>
+                    <img id="toggle-image" src="./images/cash_out_big.png" height="100%" width="100%">
+                </a>
+            </div>
         </div>
-        <script src="./script.js">
-        </script>
+        <script src="./index.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>
 

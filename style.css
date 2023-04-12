@@ -12,7 +12,7 @@ body {
   height: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: auto;
   background: #04a9223a;
   display: flex;
@@ -104,6 +104,57 @@ button {
   padding: 10px 15px;
 }
 
+#cancel-btn {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 0.2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: rgb(141, 26, 26);
+}
+
+/* #update-row-btn {
+  display: flex; 
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 0.2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  color: rgb(17, 205, 17);
+} */
+
+/* #update-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+#name-input {
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  width: 90px;
+}
+
+#update-row-btn {
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  color: rgb(17, 205, 17);
+}
+
 .info {
   position: fixed;
   bottom: 0;
@@ -113,12 +164,12 @@ button {
 
 ul {
   list-style: none;
-  padding: 300;
+  padding: 100;
 }
 
 .two-column-list {
   columns: 2;
-  height: 100px;
+  height: 70px;
 }
 
 .two-column-list li {
@@ -127,7 +178,7 @@ ul {
 
 #first:before{
   content: "💾";
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 #first{
@@ -147,19 +198,17 @@ ul {
 
 #second:before{
   content: "🕹️";
-  margin-right: 3px;
-  font-family: "MyFont", sans-serif;
-  color: #4CAF50;
+  margin-right: 2px;
 }
 
 #second{
   font-family: "MyFont", sans-serif;
-  color: #076309ea;
+  color: #076309b5;
 }
 
 #second_score{
   font-family: "MyFont", sans-serif;
-  color: #076309ea;
+  color: #076309b5;
 }
 
 #second_score:before{
@@ -169,19 +218,19 @@ ul {
 
 #third:before{
   content: "🤖";
-  margin-right: 3px;
+  margin-right: 2px;
   font-family: "MyFont", sans-serif;
   color: #4CAF50;
 }
 
 #third{
   font-family: "MyFont", sans-serif;
-  color: #076309bc;
+  color: #07630967;
 }
 
 #third_score{
   font-family: "MyFont", sans-serif;
-  color: #076309bc;
+  color: #07630967;
 }
 
 #third_score:before{
@@ -191,7 +240,7 @@ ul {
 
 @font-face {
   font-family: "MyFont";
-  src: url("./kongtext.ttf");
+  src: url("./fonts/kongtext.ttf");
 }
 
 h2 {
@@ -202,7 +251,104 @@ h2 {
 }
 
 #leaderboard {
-  border: 2px solid #4CAF50;
+  border: 1px solid #4CAF50;
   border-radius: 15px;
   box-shadow: 0 0 10px #4CAF50;
+}
+
+#cash-out {
+  align-self: flex-start;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+/* table {
+  margin: 50px auto;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+th, td {
+  padding: 5px;
+} */
+
+.container {
+  font-family: sans-serif;
+  text-align: center;
+  height: 15%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(
+    to bottom,
+    hsla(49, 100%, 56%, 1),
+    hsla(300, 84%, 39%, 1)
+  ); */
+}
+
+.title {
+  font-size: 7em;
+  font-weight: 500;
+  /* font-family: "Fredoka One"; */
+  font-family: Impact;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+span:last-child {
+  position: relative;
+  top: -30px;
+}
+
+.subtitle {
+  position: relative;
+  top: -30px;
+  left: 150px;
+  font-size: 2em;
+  font-weight: 100;
+  /* font-family: Caveat; */
+  font-family: "Bradley Hand";
+  padding: 0;
+  margin: 0;
+  transform: rotateZ(-10deg);
+  color: hsl(318, 100%, 51%);
+
+  text-shadow: 1px 1px hsl(130, 84%, 62%), 2px 2px hsl(240, 90%, 61%);
+}
+
+.metal {
+  background: linear-gradient(
+    hsl(142, 50%, 30%) 15%,
+    hsl(144, 50%, 40%) 25%,
+    hsl(200, 60%, 50%) 35%,
+    hsl(100, 70%, 80%) 45%,
+    hsl(60, 100%, 98%) 50%,
+    hsl(240, 0%, 0%) 52%,
+    hsl(240, 10%, 10%) 60%,
+    hsl(145, 50%, 30%) 70%,
+    hsl(220, 70%, 60%) 80%,
+    hsl(212, 92%, 76%) 85%
+  );
+
+  -webkit-text-stroke: 2px hsl(200, 65%, 80%);
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.raise {
+  filter: drop-shadow(1px 3px 0px hsl(242, 54%, 10%))
+    drop-shadow(1px 3px 0px hsl(242, 54%, 15%))
+    drop-shadow(1px 3px 0px hsl(242, 54%, 20%))
+    drop-shadow(1px 3px 0px hsl(242, 54%, 25%))
+    drop-shadow(1px 3px 0px hsl(242, 54%, 30%))
+    drop-shadow(0px 0px 10px rgba(16, 16, 16, 0.4));
 }
