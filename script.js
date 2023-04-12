@@ -226,7 +226,8 @@
       const binary = (score).toString(2);
       const updateNameInput = document.querySelector('#name-input');
       
-      fetch('https://arcade-backend-jdk4.onrender.com:10000/updateLeaderboard', {
+      // fetch('https://arcade-backend-jdk4.onrender.com:10000/updateLeaderboard', {
+      fetch('https://arcade-backend-jdk4.onrender.com/updateLeaderboard', {
           method: 'PATCH',
           headers: {
               'Content-type': 'application/json'

@@ -1,6 +1,7 @@
 // we want to load the database conent when the page loads
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://arcade-backend-jdk4.onrender.com:10000/getAll')
+    // fetch('https://arcade-backend-jdk4.onrender.com:10000/getAll')
+    fetch('https://arcade-backend-jdk4.onrender.com/getAll')
     .then(response => response.json())
     .then(data => loadHTMLTable(data["data"]));
 });
