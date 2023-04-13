@@ -246,7 +246,7 @@
               success_audio.play();
               setTimeout(function() {
                 location.reload();
-              }, 500);
+              }, 800);
               // location.reload();
               // console.log("reload skip");
           }
