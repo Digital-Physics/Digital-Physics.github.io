@@ -44,7 +44,7 @@
 
 
 let square = document.getElementById("square");
-let homePos = { x: 50, y: 50 };
+let homePos = { x: 0, y: 0 };
 let isDropped = false;
 
 function moveUp() {
