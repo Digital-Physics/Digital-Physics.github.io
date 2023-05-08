@@ -1,30 +1,54 @@
-#outline {
+#front {
     width: 500px;
-    height: 50px;
-    background-image: url('./img9.png');
+    height: 700px;
+    background-image: url('./front_glass.png');
     position: absolute;
-    top: -2px;
-    left: 20px;
+    /* top: -2px; */
+    left: 0px;
+    /* background-size: contain; adjust the size of the image to fit within the div */
+    background-repeat: no-repeat; /* prevent the image from repeating */
+    background-position: center center; /* center the image within the div */
+    /* background-size: contain; */
+    z-index: 3;
   }
+
+#back {
+    width: 500px;
+    height: 700px;
+    background-image: url('./back_glass.png');
+    position: absolute;
+    /* top: -2px; */
+    left: 0px;
+    /* background-size: contain; adjust the size of the image to fit within the div */
+    background-repeat: no-repeat; /* prevent the image from repeating */
+    background-position: center center; /* center the image within the div */
+    /* background-size: contain; */
+    z-index: 1;
+}
   
 #grid {
     width: 500px;
-    height: 500px;
+    height: 700px;
     border: 1px solid black;
-    position: relative;
-    top: 50px;
+    /* background-image: url('./front_glass.png'); */
+    position: absolute;
+    /* top: 0px; */
+    /* background-repeat: no-repeat;  */
+    /* background-size: contain; */
+    /* z-index: 2; */
   }
   
 #square {
-    width: 50px;
-    height: 50px;
-    background-image: url("./img4.png");
+    width: 100px;
+    height: 100px;
+    background-image: url("./claw.png");
     position: absolute;
     background-size: contain; /* adjust the size of the image to fit within the div */
     background-repeat: no-repeat; /* prevent the image from repeating */
     background-position: center center; /* center the image within the div */
-    top: 0px;
-    left: 0px;
+    /* top: 0px; */
+    /* left: 0px; */
+    z-index: 2;
   }
 
 .button-container {
