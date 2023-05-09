@@ -1,7 +1,7 @@
 #front {
     width: 500px;
     height: 700px;
-    background-image: url('./front_glass.png');
+    background-image: url('./front_glass0.png');
     position: absolute;
     /* top: -2px; */
     left: 0px;
@@ -9,7 +9,7 @@
     background-repeat: no-repeat; /* prevent the image from repeating */
     background-position: center center; /* center the image within the div */
     /* background-size: contain; */
-    z-index: 3;
+    z-index: 4;
   }
 
 #back {
@@ -41,7 +41,7 @@
 #square {
     width: 100px;
     height: 100px;
-    background-image: url("./claw.png");
+    background-image: url("./claw_open.png");
     position: absolute;
     background-size: contain; /* adjust the size of the image to fit within the div */
     background-repeat: no-repeat; /* prevent the image from repeating */
@@ -85,3 +85,17 @@
 .button.left {
     transform: rotate(180deg);
 }
+
+#container {
+    position: absolute;
+    perspective: 15px; 
+    z-index: 3;
+  }
+  
+  .image {
+    position: absolute;
+    /* width: 2px;
+    height: 2px;
+    transition: transform 0.5s;  */
+  } 
+  
